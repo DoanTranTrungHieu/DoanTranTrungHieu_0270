@@ -28,5 +28,23 @@ namespace DoanTranTrungHieu_2121110270
             Form2 mainmenu = new Form2();
             mainmenu.ShowDialog(this);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 mainmenu = new Form3();
+            mainmenu.ShowDialog(this);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 mainmenu = new Form4();
+            mainmenu.ShowDialog(this);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form5 mainmenu = new Form5();
+            mainmenu.ShowDialog(this);
+        }
     }
 }
