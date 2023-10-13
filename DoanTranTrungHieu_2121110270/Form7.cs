@@ -148,7 +148,7 @@ namespace DoanTranTrungHieu_2121110270
             }
             if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                MessageBox.Show("Bạn chưa nhập Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa nhập Lớppppp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 textBox2.Focus();
                 return false;
             }
