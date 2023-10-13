@@ -118,7 +118,7 @@ namespace DoanTranTrungHieu_2121110270
         {
             if (string.IsNullOrWhiteSpace(tbId.Text))
             {
-                MessageBox.Show("Bạn chưa nhập Mã sinh viên", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa nhập Mã sinh viênnn", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbId.Focus();
                 return false;
             }
