@@ -15,7 +15,9 @@ namespace DoanTranTrungHieu_2121110270
         public string Id { get; set; }
         public string Name { get; set; }
         public string Age { get; set; }
-        public bool Gender { get; set; }
+
+
+        
     }
 
 }

@@ -55,7 +55,7 @@ namespace DoanTranTrungHieu_2121110270
             if (checkBox1.Checked == true)
                 textBox2.Enabled = true;
             else
-                textBox2.Enabled=false;
+                textBox2.Enabled = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -64,6 +64,16 @@ namespace DoanTranTrungHieu_2121110270
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
