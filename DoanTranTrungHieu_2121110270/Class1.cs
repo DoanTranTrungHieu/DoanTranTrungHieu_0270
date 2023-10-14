@@ -15,9 +15,12 @@ namespace DoanTranTrungHieu_2121110270
         public string Id { get; set; }
         public string Name { get; set; }
         public string Age { get; set; }
+        public string gioitinh { get; set; }
+        public string diem { get; set; }
+        public string lop { get; set; }
 
 
-        
+
     }
 
 }

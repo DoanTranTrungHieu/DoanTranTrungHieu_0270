@@ -31,18 +31,27 @@ namespace DoanTranTrungHieu_2121110270
             em.Id = "53418";
             em.Name = "Trần Tiến";
             em.Age = "20";
+            em.gioitinh = "Nam";
+            em.diem = "9";
+            em.lop = "CCQ211";
             lst.Add(em);
 
             em = new Employee();
             em.Id = "53416";
             em.Name = "Nguyễn Cường";
             em.Age = "25";
+            em.gioitinh = "Nam";
+            em.diem = "9";
+            em.lop = "CCQ211";
             lst.Add(em);
 
             em = new Employee();
             em.Id = "53417";
             em.Name = "Nguyễn Hào";
             em.Age = "23";
+            em.gioitinh = "Nam";
+            em.diem = "9";
+            em.lop = "CCQ211";
             lst.Add(em);
             return lst;
         }
@@ -105,12 +114,15 @@ namespace DoanTranTrungHieu_2121110270
             em.Id = tbId.Text;
             em.Name = tbName.Text;
             em.Age = tbAge.Text;
+            em.gioitinh = comboBox1.Text;
+            em.diem = textBox1.Text;
+            em.lop = textBox2.Text;
             lst.Add(em);
             if (checkData())
             {
                 dataGridView1.Rows.Add(tbId.Text, tbName.Text, tbAge.Text, comboBox1.Text, textBox1.Text, textBox2.Text, pictureBox1.Image);
             }
-            
+
 
         }
 
@@ -136,7 +148,7 @@ namespace DoanTranTrungHieu_2121110270
             }
             if (string.IsNullOrWhiteSpace(comboBox1.Text))
             {
-                MessageBox.Show("Bạn chưa nhập Giới tính", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa nhập Giới tínhh", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 comboBox1.Focus();
                 return false;
             }
@@ -169,7 +181,7 @@ namespace DoanTranTrungHieu_2121110270
             lst = GetData();
             foreach (Employee em in lst)
             {
-                dataGridView1.Rows.Add(em.Id, em.Name, em.Age);
+                dataGridView1.Rows.Add(em.Id, em.Name, em.Age,em.gioitinh,em.diem,em.lop);
             }
         }
 
@@ -200,6 +212,15 @@ namespace DoanTranTrungHieu_2121110270
 
         }
 
-
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int idx = e.RowIndex;
+            tbId.Text = dataGridView1.Rows[idx].Cells[0].Value.ToString();
+            tbName.Text = dataGridView1.Rows[idx].Cells[1].Value.ToString();
+            tbAge.Text = dataGridView1.Rows[idx].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridView1.Rows[idx].Cells[3].Value.ToString();
+            textBox1.Text = dataGridView1.Rows[idx].Cells[4].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[idx].Cells[5].Value.ToString();
+        }
     }
 }
