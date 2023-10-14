@@ -51,7 +51,7 @@ namespace DoanTranTrungHieu_2121110270
             em.Age = "23";
             em.gioitinh = "Nam";
             em.diem = "9";
-            em.lop = "CCQ211";
+            em.lop = "CCQ2111";
             lst.Add(em);
             return lst;
         }
