@@ -188,7 +188,7 @@ namespace DoanTranTrungHieu_2121110270
         private void button1_Click_1(object sender, EventArgs e)
         {
             int idx = dataGridView1.CurrentCell.RowIndex;
-            dataGridView1.Rows.Add(tbId.Text, tbName.Text, tbAge.Text, comboBox1.Text, textBox1.Text, textBox2.Text, pictureBox1.Image);
+            dataGridView1.Rows[idx].SetValues(tbId.Text, tbName.Text, tbAge.Text, comboBox1.Text, textBox1.Text, textBox2.Text, pictureBox1.Image);
         }
 
         private void ckGender_CheckedChanged(object sender, EventArgs e)
@@ -212,15 +212,6 @@ namespace DoanTranTrungHieu_2121110270
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int idx = e.RowIndex;
-            tbId.Text = dataGridView1.Rows[idx].Cells[0].Value.ToString();
-            tbName.Text = dataGridView1.Rows[idx].Cells[1].Value.ToString();
-            tbAge.Text = dataGridView1.Rows[idx].Cells[2].Value.ToString();
-            comboBox1.Text = dataGridView1.Rows[idx].Cells[3].Value.ToString();
-            textBox1.Text = dataGridView1.Rows[idx].Cells[4].Value.ToString();
-            textBox2.Text = dataGridView1.Rows[idx].Cells[5].Value.ToString();
-        }
+                                     
     }
 }
