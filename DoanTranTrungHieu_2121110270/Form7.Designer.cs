@@ -35,13 +35,6 @@
             tbName = new TextBox();
             tbAge = new TextBox();
             dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewImageColumn();
             btAddNew = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -54,6 +47,13 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label6 = new Label();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -124,61 +124,6 @@
             dataGridView1.Size = new Size(1059, 313);
             dataGridView1.TabIndex = 6;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // Column1
-            // 
-            Column1.DataPropertyName = "Id";
-            Column1.HeaderText = "Mã nhân viên";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            Column2.DataPropertyName = "Name";
-            Column2.HeaderText = "Tên nhân viên";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 180;
-            // 
-            // Column3
-            // 
-            Column3.DataPropertyName = "Age";
-            Column3.HeaderText = "Tuổi";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Giới tính";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 150;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Điểm";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Lớp";
-            Column7.MinimumWidth = 6;
-            Column7.Name = "Column7";
-            Column7.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Ảnh";
-            Column5.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.Resizable = DataGridViewTriState.True;
-            Column5.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column5.Width = 125;
             // 
             // btAddNew
             // 
@@ -292,6 +237,61 @@
             label6.Size = new Size(34, 20);
             label6.TabIndex = 19;
             label6.Text = "Lớp";
+            // 
+            // Column1
+            // 
+            Column1.DataPropertyName = "Id";
+            Column1.HeaderText = "Mã sinh viên";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            Column2.DataPropertyName = "Name";
+            Column2.HeaderText = "Tên sinh viên";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 180;
+            // 
+            // Column3
+            // 
+            Column3.DataPropertyName = "Age";
+            Column3.HeaderText = "Tuổi";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Giới tính";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 150;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Điểm";
+            Column6.MinimumWidth = 6;
+            Column6.Name = "Column6";
+            Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "Lớp";
+            Column7.MinimumWidth = 6;
+            Column7.Name = "Column7";
+            Column7.Width = 125;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Ảnh";
+            Column5.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.Resizable = DataGridViewTriState.True;
+            Column5.SortMode = DataGridViewColumnSortMode.Automatic;
+            Column5.Width = 125;
             // 
             // Form7
             // 

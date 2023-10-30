@@ -181,7 +181,7 @@ namespace DoanTranTrungHieu_2121110270
             lst = GetData();
             foreach (Employee em in lst)
             {
-                dataGridView1.Rows.Add(em.Id, em.Name, em.Age,em.gioitinh,em.diem,em.lop);
+                dataGridView1.Rows.Add(em.Id, em.Name, em.Age, em.gioitinh, em.diem, em.lop);
             }
         }
 
@@ -212,6 +212,6 @@ namespace DoanTranTrungHieu_2121110270
 
         }
 
-                                     
+
     }
 }
